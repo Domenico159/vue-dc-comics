@@ -143,6 +143,10 @@ footer .container .box-links ul li a{
     margin-top:5px ;
 }
 
+footer .container .box-links ul li a:hover{
+    color: #1e90ff;
+}
+
 footer .footer-bottoom{
     background: #303030;
 }
