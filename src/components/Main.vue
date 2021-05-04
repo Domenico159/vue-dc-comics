@@ -52,7 +52,7 @@ main{
 }
 
 .main-bottom{
-    background: dodgerblue;
+    background: #1e90ff;
 }
 
 .main-bottom ul {
