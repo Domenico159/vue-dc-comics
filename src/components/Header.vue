@@ -4,44 +4,8 @@
           <nav class="container">
               <a href=""><img src="../assets/img/dc-logo.png" alt=""></a>
               <ul>
-                  <li>
-                      <a href="">characters</a>
-                      <div class="bar"></div>
-                  </li>
-                  <li>
-                      <a href="">comics</a>
-                      <div class="bar"></div>
-                  </li>
-                  <li>
-                      <a href="">movies</a>
-                      <div class="bar"></div>
-                  </li>
-                  <li>
-                      <a href="">tv</a>
-                      <div class="bar"></div>
-                  </li>
-                  <li>
-                      <a href="">games</a>
-                      <div class="bar"></div>
-                  </li>
-                  <li>
-                      <a href="">collectibles</a>
-                      <div class="bar"></div>
-                  </li>
-                  <li>
-                      <a href="">videos</a>
-                      <div class="bar"></div>
-                  </li>
-                  <li>
-                      <a href="">fans</a>
-                      <div class="bar"></div>
-                  </li>
-                  <li>
-                      <a href="">news</a>
-                      <div class="bar"></div>
-                  </li>
-                  <li>
-                      <a href="">shop</a>
+                  <li v-for="(element,index) in links" :key="index">
+                      <a :href="element.url">{{ element.name }}</a>
                       <div class="bar"></div>
                   </li>
               </ul>
@@ -53,6 +17,54 @@
 <script>
 export default {
     name:'Header',
+    data(){
+
+        return {
+            links:[
+                {
+                name:'characters',
+                url:'#'
+            },
+            {
+                name:'comics',
+                url:'#'
+            },
+            {
+                name:'movies',
+                url:'#'
+            },
+            {
+                name:'tv',
+                url:'#'
+            },
+            {
+                name:'games',
+                url:'#'
+            },
+            {
+                name:'collectibles',
+                url:'#'
+            },
+            {
+                name:'videos',
+                url:'#'
+            },
+            {
+                name:'fans',
+                url:'#'
+            },
+            {
+                name:'news',
+                url:'#'
+            },
+            {
+                name:'shop',
+                url:'#'
+            },
+            ]
+        }
+
+    },
 }
 </script>
 
