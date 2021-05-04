@@ -68,6 +68,8 @@ main{
 .main-bottom ul li a {
     color: #fff;
     margin-left: 30px;
+    text-transform: uppercase;
+    font-size: 14px;
 }
 .main-bottom ul li img{
     width: 50px;
