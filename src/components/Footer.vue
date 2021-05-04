@@ -98,7 +98,14 @@ footer .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 0;
 }
+
+
+footer .container .box-img{
+    overflow: hidden;
+}
+
 
 footer .container .box-links{
     padding: 30px 10px;
