@@ -162,6 +162,12 @@ footer .footer-bottoom .container .follow ul {
 
 footer .footer-bottoom .container .follow ul li{
     margin-right:15px ;
+    transition: transform 0.3s;
+}
+
+
+footer .footer-bottoom .container .follow ul li:hover{
+    transform: scale(1.1);
 }
 
 footer .footer-bottoom .container .btn button{
@@ -172,7 +178,17 @@ footer .footer-bottoom .container .btn button{
     color: #fff;
     font-size: 18px;
     border: 2px solid #1e90ff;
+    cursor: pointer;
 
+}
+
+
+footer .footer-bottoom .container .btn{
+     transition: transform 0.3s;
+}
+
+footer .footer-bottoom .container .btn:hover{
+    transform: scale(1.1);
 }
 
 footer .footer-bottoom .container .follow ul li a h2{
