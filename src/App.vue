@@ -28,4 +28,22 @@ export default {
 
 <style>
 
+/* General */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+li a{
+  text-decoration: none;
+  color: #000;
+  transition: color 0.2s;
+}
+
 </style>
