@@ -77,7 +77,7 @@ header nav ul {
 header nav ul li {
     margin-right: 15px;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 600;
     position: relative;
 }
