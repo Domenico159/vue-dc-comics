@@ -5,7 +5,7 @@
                   <div class="main-center-top"></div>
                   <div class="main-center-bottom container">
 
-                      <button>Current series</button>
+                      <button class="btn1">Current series</button>
 
                       <div class="main-box container">
                           <ProdCard 
@@ -14,8 +14,10 @@
                           :details="element"
                           />
                       </div>
-
                   </div>
+                  <div class="btn-buttom container">
+                          <button class="btn2">Load more</button>
+                      </div>
               </div>
               <div class="main-bottom">
                   <ul class="container">
@@ -102,9 +104,9 @@ main{
     }
 
     .main-center-bottom{
-        padding: 80px 15px;
         padding-top:40px;
         margin-top: 20px;
+        padding-bottom: 30px;
         position: relative;
     }
 
@@ -113,14 +115,8 @@ main{
         flex-wrap: wrap;
     }
 
-    .main-center-bottom .main-box .card{
-        flex-basis: calc(100% / 6 - 20px);
-        height: 200px;
-        margin: 40px 10px;
-        margin-top: 5px;
-    }
-
-    button{
+    
+    button.btn1{
         position: absolute;
         top: -48px;
         background: #0282f9;
@@ -131,6 +127,23 @@ main{
         text-transform: uppercase;
         font-weight: 600;
         font-size:24px ;
+    }
+
+    .btn-buttom{
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn-buttom button.btn2{
+        background: #0282f9;
+        color: #fff;
+        padding: 10px 40px;
+        outline: none;
+        border: none;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size:16px ;
+        margin-bottom: 20px;
     }
 
 </style>

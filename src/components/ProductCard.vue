@@ -21,9 +21,21 @@ img {
     object-fit: cover;
 }
 
+.main-center-bottom .main-box .card{
+        flex-basis: calc(100% / 6 - 40px);
+        margin: 15px 18px;
+    }
+
+    .main-center-bottom .main-box .card h3{
+        text-transform: uppercase;
+        font-size: 12px;
+        color: #b9bbb2;
+    }
+
+
 .card .box-img{
-    width: 130px;
-    margin-bottom: 15px;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 </style>
