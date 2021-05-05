@@ -96,7 +96,7 @@ header nav ul li {
 
 header nav ul li .bar{
     position: absolute;
-    bottom: -50px;
+    bottom: -45px;
     height: 5px;
     width: 100%;
     background: dodgerblue;
