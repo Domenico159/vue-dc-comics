@@ -1,8 +1,21 @@
 <template>
   <div>
       <main>
-              <div class="main-content container">
-                  <h2> Content goes here </h2>
+              <div class="main-content">
+                  <div class="main-center-top"></div>
+                  <div class="main-center-bottom container">
+
+                      <button>Current series</button>
+
+                      <div class="main-box container">
+                          <ProdCard 
+                          v-for="(element,index) in cards "
+                          :key="index"
+                          :details="element"
+                          />
+                      </div>
+
+                  </div>
               </div>
               <div class="main-bottom">
                   <ul class="container">
@@ -33,8 +46,19 @@
 </template>
 
 <script>
+import ProdCard from '@/components/ProductCard.vue';
+import cards from '@/data/cards.js';
+
 export default {
     name:'Main',
+    components:{
+        ProdCard,
+    },
+    data(){
+        return {
+            cards:cards,
+        }
+    }
 }
 </script>
 
@@ -45,11 +69,6 @@ main{
     color: #fff;
 }
 
-.main-content{
-    height: 100px;
-    display: flex;
-    align-items: center;
-}
 
 .main-bottom{
     background: #1e90ff;
@@ -74,5 +93,45 @@ main{
 .main-bottom ul li img{
     width: 50px;
 }
+
+/* main center */
+.main-center-top{
+    height: 500px;
+    background-image: url(../assets/img/jumbotron.jpg);
+    background-size: cover;
+    position: relative;
+    }
+
+    .main-center-bottom{
+        padding: 80px 15px;
+        padding-top:40px;
+        overflow: hidden;
+        margin-top: 20px;
+    }
+
+    .main-center-bottom .main-box{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main-center-bottom .main-box .card{
+        flex-basis: calc(100% / 6 - 20px);
+        height: 200px;
+        margin: 40px 10px;
+        margin-top: 5px;
+    }
+
+    button{
+        position: absolute;
+        bottom: -62px;
+        background: #0282f9;
+        color: #fff;
+        padding: 15px 20px;
+        outline: none;
+        border: none;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size:24px ;
+    }
 
 </style>
