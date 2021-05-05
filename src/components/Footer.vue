@@ -98,17 +98,22 @@ footer .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
 }
 
 
 footer .container .box-img{
     overflow: hidden;
+    max-height: 400px;
+}
+
+footer .container .box-img img{
+    transform: translateY(-80px);
+    display: block;
 }
 
 
 footer .container .box-links{
-    padding: 30px 10px;
+    padding: 0px 10px;
 }
 
 footer .container .box-links ul {
