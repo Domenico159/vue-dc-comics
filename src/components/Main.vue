@@ -146,4 +146,13 @@ main{
         margin-bottom: 20px;
     }
 
+    button{
+        transition: transform 0.3s;
+        cursor: pointer;
+    }
+
+    button:hover{
+        transform: scale(1.1);
+    }
+
 </style>

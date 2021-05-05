@@ -24,6 +24,12 @@ img {
 .main-center-bottom .main-box .card{
         flex-basis: calc(100% / 6 - 40px);
         margin: 15px 18px;
+        transition: transform 0.3s;
+        cursor: pointer;
+    }
+
+    .main-center-bottom .main-box .card:hover{
+        transform: scale(1.1);
     }
 
     .main-center-bottom .main-box .card h3{
