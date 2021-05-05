@@ -99,14 +99,13 @@ main{
     height: 500px;
     background-image: url(../assets/img/jumbotron.jpg);
     background-size: cover;
-    position: relative;
     }
 
     .main-center-bottom{
         padding: 80px 15px;
         padding-top:40px;
-        overflow: hidden;
         margin-top: 20px;
+        position: relative;
     }
 
     .main-center-bottom .main-box{
@@ -123,7 +122,7 @@ main{
 
     button{
         position: absolute;
-        bottom: -62px;
+        top: -48px;
         background: #0282f9;
         color: #fff;
         padding: 15px 20px;
